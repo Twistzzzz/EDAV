@@ -258,9 +258,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4.2" data-path="contribute.html"><a href="contribute.html#why-contribute"><i class="fa fa-check"></i><b>4.2</b> Why contribute?</a></li>
 <li class="chapter" data-level="4.3" data-path="contribute.html"><a href="contribute.html#ways-you-can-contribute"><i class="fa fa-check"></i><b>4.3</b> Ways you can contribute</a><ul>
 <li class="chapter" data-level="4.3.1" data-path="contribute.html"><a href="contribute.html#submit-an-issue"><i class="fa fa-check"></i><b>4.3.1</b> Submit an issue</a></li>
-<li class="chapter" data-level="4.3.2" data-path="contribute.html"><a href="contribute.html#contribute-online"><i class="fa fa-check"></i><b>4.3.2</b> Contribute online</a></li>
-<li class="chapter" data-level="4.3.3" data-path="contribute.html"><a href="contribute.html#contribute-code"><i class="fa fa-check"></i><b>4.3.3</b> Contribute code</a></li>
-<li class="chapter" data-level="4.3.4" data-path="contribute.html"><a href="contribute.html#solve-an-open-issue"><i class="fa fa-check"></i><b>4.3.4</b> Solve an open issue</a></li>
+<li class="chapter" data-level="4.3.2" data-path="contribute.html"><a href="contribute.html#github-only-contribution"><i class="fa fa-check"></i><b>4.3.2</b> GitHub only contribution</a></li>
 </ul></li>
 <li class="chapter" data-level="4.4" data-path="contribute.html"><a href="contribute.html#resources-1"><i class="fa fa-check"></i><b>4.4</b> Resources</a></li>
 </ul></li>
@@ -719,9 +717,10 @@ function unhover(element) {
 <p>There are many ways you can contribute:</p>
 <ul>
 <li><p><i class="fas fa-exclamation-circle"></i> For <strong>large or small ideas, without providing the code</strong> <i class="fas fa-arrow-right"></i> <a href="contribute.html#submit-an-issue"><strong>submit an issue</strong></a> (very simple, much appreciated)</p></li>
-<li><p><i class="fas fa-edit"></i> For <strong>simple changes</strong> <i class="fas fa-arrow-right"></i> <a href="contribute.html#contribute-online"><strong>contribute online</strong></a> (this can all be done on <strong>GitHub.com</strong>… we got a full walkthrough explaining how)</p></li>
-<li><p><i class="fas fa-code-branch"></i> For <strong>more complex changes</strong> <i class="fas fa-arrow-right"></i> <a href="contribute.html#contribute-code"><strong>install Git and work locally</strong></a> (the next level, also much appreciated) – adventurous users may <a href="contribute.html#solve-an-open-issue"><strong>solve an open issue</strong></a> (more advanced/open-ended)</p></li>
+<li><p><i class="fas fa-edit"></i> For <strong>simple changes</strong> <i class="fas fa-arrow-right"></i> <a href="#contribute-online"><strong>contribute online</strong></a> (this can all be done on <strong>GitHub.com</strong>… we got a full walkthrough explaining how)</p></li>
+<li><p><i class="fas fa-code-branch"></i> For <strong>more complex changes</strong> <i class="fas fa-arrow-right"></i> **install Git and <a href="github.html">work locally**</a> (the next level, also much appreciated) – adventurous users may <a href="#solve-an-open-issue"><strong>solve an open issue</strong></a> (more advanced/open-ended)</p></li>
 </ul>
+<p><a href="github.html">guide on using git</a></p>
 <p>Below you’ll find more detail on each option.</p>
 <p>Happy coding! <i class="fas fa-heart"></i></p>
 <div id="submit-an-issue" class="section level3">
@@ -744,17 +743,13 @@ function unhover(element) {
 <li>For more info, please consider reading the <a href="https://opensource.guide/how-to-contribute/" target="_blank">Open Source Guide</a> on how to contribute.</li>
 </ul>
 </div>
-<div id="contribute-online" class="section level3">
-<h3><span class="header-section-number">4.3.2</span> Contribute online</h3>
+<div id="github-only-contribution" class="section level3">
+<h3><span class="header-section-number">4.3.2</span> GitHub only contribution</h3>
+<p><em>What does that mean? That you do everything on github.com. You will need to create a github.com account if you don’t have one, but that’s it.</em></p>
 <p>One way to contribute to <em>edav.info/</em> is to <strong>contribute directly</strong> by editing a chapter. At the top of every page of this resource, you will see an icon that looks like this: <i class="fas fa-edit"></i>. Clicking it will open a new tab where you can edit the markdown for that page on <a href="https://github.com/jtr13/EDAV" target="_blank">our GitHub repo</a> and submit your change as a pull request. Essentially, you will create a copy of our repo, make your desired changes, and suggest to us that we include them. If we approve of your changes, they will be rendered and published to the site.</p>
-<p>Contributing directly works best if the change you are proposing is something relatively small, such as:</p>
-<ul>
-<li>A typo/grammatical error</li>
-<li>An unclear phrasing/explanation</li>
-<li>A quick code fix</li>
-</ul>
-<div id="direct-contribution-walkthrough" class="section level4">
-<h4><span class="header-section-number">4.3.2.1</span> Direct contribution walkthrough</h4>
+<p>Contributing directly in this manner works best if the change you are proposing is something relatively small, such as a typo/grammatical error or an unclear phrasing/explanation. In general, it doesn’t work well to propose changes to code directly on GitHub.</p>
+<div id="github-only-walkthrough" class="section level4">
+<h4><span class="header-section-number">4.3.2.1</span> GitHub only walkthrough</h4>
 <p>This is a full walkthough on proposing a change to <em>edav.info/</em>, however the instructions are the same for making changes to any repo. It follows a hypothetical student that spots a typo and uses a pull request to fix it. It’s a little long, but don’t get scared; it’s a great way to learn about GitHub and it’s almost entirely hitting big green buttons!</p>
 <ol style="list-style-type: decimal">
 <li><p>Let’s <strong>find something to change</strong>. I’m pretty sure they meant to write “repository” here. Oops. Let’s fix it for them!
@@ -763,7 +758,7 @@ function unhover(element) {
 <li><p>To make the fix, we <strong>click on the edit icon</strong>, <i class="fas fa-edit"></i>, at the top of the page. This will take us to their GitHub repo, where all the code for this resource is stored. <br> <strong>Note</strong>: You need to have a valid GitHub account to contribute. In this example, we are using a dummy account called <strong>excited-student</strong> so if you see it in a screenshot, know that it would be replaced by your own username.
 <img src="images/excited_student/directly-02.png" />
 <em>Hit this icon to go to GitHub.</em></p></li>
-<li><p>We haven’t forked the repo yet, so GitHub shows us a page like the one below. No worries! We just <strong>hit the big green button</strong> labeled <strong><i class="fas fa-code-branch"></i> Fork this repository and propose changes</strong> and we’ll be good to go (as you will see, big green buttons are our friends). For more info on forking repos, the <a href="https://guides.github.com/activities/forking/" target="_blank">GitHub Guide on Forking Projects</a> is very informative. <strong>Note</strong>: you will not have to fork the repo every time. If you propose another change in the future, the edit icon, <i class="fas fa-edit"></i>, will jump you directly to this point of the walkthrough.
+<li><p>This is our first edit to the repo, so GitHub shows us a page like the one below. No worries! We just <strong>hit the big green button</strong> labeled <strong><i class="fas fa-code-branch"></i> Fork this repository and propose changes</strong> and we’ll be good to go (as you will see, big green buttons are our friends). <strong>Note</strong>: you will not have to fork the repo every time. If you propose another change in the future, the edit icon, <i class="fas fa-edit"></i>, will jump you directly to this point of the walkthrough.
 <img src="images/excited_student/directly-03.png" />
 <em>Haven’t forked the repo before? No worries; the big green button will solve everything.</em></p></li>
 <li><p>Now that we have successfully forked the repo, we can <strong>see the code</strong> for the page we want to edit. <br><strong>Note</strong>: That little blue blurb at the top is spelling out what is happening/going to happen: we have made a copy of a repo because we don’t have write access to it . So, after we make our change on this page, we will inform the owners of the repo about our edits by using a pull request. GitHub can be super overwhelming, but it will try its darndest to inform you what will happen along the way.
@@ -815,21 +810,13 @@ function unhover(element) {
 <a href="https://giphy.com/gifs/reaction-food-simpsons-nxscd2YGVf6xi" target="_blank">via GIPHY</a>
 </center>
 <p><br></p>
+</div>
+<div id="the-next-edit" class="section level4">
+<h4><span class="header-section-number">4.3.2.2</span> The next edit</h4>
 <ol start="13" style="list-style-type: decimal">
-<li>Bear in mind that as time goes on, the code in your fork will fall behind that of the main project. If it’s a project that you contribute to on a regular basis, you’ll want to learn how to <a href="https://help.github.com/articles/syncing-a-fork/">keep your fork up to date.</a>. This unfortunately is a little more complex than it should be. An alternative is to delete your fork and start over. This may be the best option for infrequent contributions to the same project.</li>
+<li><strong>Looking ahead</strong> If you have a second edit to propose, simply follow the instructions again. As noted above, the second time through you will not be asked to fork the repo again. If you look closely at the pull request for the second edit, the branch to be merged will be named <strong>patch-2</strong> instead of <strong>patch-1</strong>. Although GitHub keeps mentioning “your fork” as you proceed through the process, this is not really something that you have to concern yourself with. In fact, you’re better off not! In fact, you should stay away from your fork – that is, your copy of the <code>EDAV</code> repo in <em>your</em> GitHub account, because it will inevitably get behind the main one and cause you trouble if you work on the old version and then try to create a pull request. So, the bottom line is, each time you have an edit to propose, go directly to either <code>edav.info</code> or <code>https://github.com/jtr13/EDAV</code> and start the editing process there, <em>not on your fork!</em>.</li>
 </ol>
-<p>If what you want to improve is a little more substantial (too difficult to contribute directly), read on.</p>
 </div>
-</div>
-<div id="contribute-code" class="section level3">
-<h3><span class="header-section-number">4.3.3</span> Contribute code</h3>
-<p>For more involved changes including modifying R code, using GitHub.com only is not enough; you will need to install git, work locally, and then submit a pull request. We have a <a href="github.html">guide on using git</a> that tells you how to contribute to others’ work. Get prepared and contribute to EDAV!</p>
-</div>
-<div id="solve-an-open-issue" class="section level3">
-<h3><span class="header-section-number">4.3.4</span> Solve an open issue</h3>
-<p>If you see an open issue that you think you can solve, by all means go for it! Simply fork our repo, add to the code base, and submit your work as a pull request. Checkout <a href="https://github.com/jtr13/EDAV/issues" target="_blank">our open issues</a> to see what needs doing. We appreciate any input you may have. <strong>Note</strong>: before getting too far into changing something, let us know in the github issue that you are working on solving it. This makes sure we are all on the same page.</p>
-<p>Confused how to actually do what was mentioned above? We have <a href="#contribute-directly">a thorough walkthrough example</a> that should help and make sure to checkout <a href="github.html">our GitHub references page</a> for links to learn about GitHub.</p>
-<p>For more info, please consider reading the <a href="https://guides.github.com/activities/forking/" target="_blank">GitHub Guide on Forking Projects</a> and the <a href="https://opensource.guide/how-to-contribute/" target="_blank">Open Source Guide</a> on how to contribute.</p>
 </div>
 </div>
 <div id="resources-1" class="section level2">
