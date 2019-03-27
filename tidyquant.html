@@ -25,7 +25,7 @@
 <meta name="author" content="Zach Bogart, Joyce Robbins">
 
 
-<meta name="date" content="2019-03-24">
+<meta name="date" content="2019-03-27">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -69,7 +69,7 @@
 <script src="libs/leaflet-markercluster-1.0.5/leaflet.markercluster.layersupport.js"></script>
 <link href="libs/vis-4.20.1/vis.css" rel="stylesheet" />
 <script src="libs/vis-4.20.1/vis.min.js"></script>
-<script src="libs/visNetwork-binding-2.0.5/visNetwork.js"></script>
+<script src="libs/visNetwork-binding-2.0.6/visNetwork.js"></script>
 <!-- 
 Favicon 
   - included in the toolbar of every page
@@ -730,7 +730,7 @@ function unhover(element) {
 <p>Obtain historical data for single stock (for example, Google):</p>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="co"># get historical data for single stock. e.g. google</span>
 <span class="kw">tq_get</span>(<span class="st">&quot;GOOGL&quot;</span>, <span class="dt">get=</span><span class="st">&quot;stock.prices&quot;</span>)</code></pre>
-<pre><code>## # A tibble: 2,572 x 7
+<pre><code>## # A tibble: 2,574 x 7
 ##    date        open  high   low close   volume adjusted
 ##    &lt;date&gt;     &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;    &lt;dbl&gt;    &lt;dbl&gt;
 ##  1 2009-01-02  154.  161.  153.  161.  7213700     161.
@@ -743,7 +743,7 @@ function unhover(element) {
 ##  8 2009-01-13  156.  160.  155.  157.  8856100     157.
 ##  9 2009-01-14  155.  157.  149.  151. 10924800     151.
 ## 10 2009-01-15  149.  152.  144.  150. 11857100     150.
-## # … with 2,562 more rows</code></pre>
+## # … with 2,564 more rows</code></pre>
 <p>Calculate monthly return of single stock:</p>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="co"># calculate monthly return of single stock</span>
 <span class="kw">tq_get</span>(<span class="kw">c</span>(<span class="st">&quot;GOOGL&quot;</span>), <span class="dt">get=</span><span class="st">&quot;stock.prices&quot;</span>) <span class="op">%&gt;%</span>
@@ -787,7 +787,7 @@ function unhover(element) {
 <p>Obtain historical data for multiple stocks (for example, GAFA):</p>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="co"># get historical data for multiple stocks. e.g. GAFA</span>
 <span class="kw">tq_get</span>(<span class="kw">c</span>(<span class="st">&quot;GOOGL&quot;</span>,<span class="st">&quot;AMZN&quot;</span>,<span class="st">&quot;FB&quot;</span>,<span class="st">&quot;AAPL&quot;</span>), <span class="dt">get=</span><span class="st">&quot;stock.prices&quot;</span>)</code></pre>
-<pre><code>## # A tibble: 9,437 x 8
+<pre><code>## # A tibble: 9,445 x 8
 ##    symbol date        open  high   low close   volume adjusted
 ##    &lt;chr&gt;  &lt;date&gt;     &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;    &lt;dbl&gt;    &lt;dbl&gt;
 ##  1 GOOGL  2009-01-02  154.  161.  153.  161.  7213700     161.
@@ -800,7 +800,7 @@ function unhover(element) {
 ##  8 GOOGL  2009-01-13  156.  160.  155.  157.  8856100     157.
 ##  9 GOOGL  2009-01-14  155.  157.  149.  151. 10924800     151.
 ## 10 GOOGL  2009-01-15  149.  152.  144.  150. 11857100     150.
-## # … with 9,427 more rows</code></pre>
+## # … with 9,435 more rows</code></pre>
 <p>Create a multiple line chart of the closing prices of multiple stocks (again, GAFA). We can show each stock in a different color on the same graph:</p>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Create a multiple line chart of the closing prices of the four stocks,</span>
 <span class="co"># showing each stock in a different color on the same graph.</span>

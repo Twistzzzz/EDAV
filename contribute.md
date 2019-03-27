@@ -59,7 +59,7 @@ Contributing directly works best if the change you are proposing is something re
 
 #### Direct contribution walkthrough
 
-This is a full walkthough on proposing a change to *edav.info/*. It follows a hypothetical student that spots a typo and uses a pull request to fix it. It's a little long, but don't get scared; it's a great way to learn about GitHub and it's almost entirely hitting big green buttons!
+This is a full walkthough on proposing a change to *edav.info/*, however the instructions are the same for making changes to any repo. It follows a hypothetical student that spots a typo and uses a pull request to fix it. It's a little long, but don't get scared; it's a great way to learn about GitHub and it's almost entirely hitting big green buttons! 
 
 1. Let's **find something to change**. I'm pretty sure they meant to write "repository" here. Oops. Let's fix it for them!
 ![](images/excited_student/directly-01.png)
@@ -69,7 +69,7 @@ This is a full walkthough on proposing a change to *edav.info/*. It follows a hy
 ![](images/excited_student/directly-02.png)
 *Hit this icon to go to GitHub.*
 
-3. We haven't forked the repo yet, so GitHub shows us a page like the one below. No worries! We just **hit the big green button** labeled **<i class="fas fa-code-branch"></i> Fork this repository and propose changes** and we'll be good to go (as you will see, big green buttons are our friends). For more info on forking repos, the [GitHub Guide on Forking Projects](https://guides.github.com/activities/forking/){target="_blank"} is very informative. **Note**: you will not have to fork the repo every time. If you propose another change in the future, the edit icon, <i class="fas fa-edit"></i>, will jump you directly to this point of the walkthrough. Just remember to [keep your fork up to date](https://help.github.com/articles/syncing-a-fork/){target="_blank"}.
+3. We haven't forked the repo yet, so GitHub shows us a page like the one below. No worries! We just **hit the big green button** labeled **<i class="fas fa-code-branch"></i> Fork this repository and propose changes** and we'll be good to go (as you will see, big green buttons are our friends). For more info on forking repos, the [GitHub Guide on Forking Projects](https://guides.github.com/activities/forking/){target="_blank"} is very informative. **Note**: you will not have to fork the repo every time. If you propose another change in the future, the edit icon, <i class="fas fa-edit"></i>, will jump you directly to this point of the walkthrough.
 ![](images/excited_student/directly-03.png)
 *Haven't forked the repo before? No worries; the big green button will solve everything.*
 
@@ -81,7 +81,7 @@ This is a full walkthough on proposing a change to *edav.info/*. It follows a hy
 ![](images/excited_student/directly-05.png)
 *Make your edits, include a quick explanation, and hit the big green button.*
 
-6. Now GitHub is once again helping out by letting us review the changes we made. On this page we can **review our proposed changes** by scrolling down and looking at the [diffs](https://git-scm.com/docs/git-diff){target="_blank"}. Our fix is very simple so there isn't much to see. Once again, we are going to **push the big green button**, this time labeled **Create pull request**. This will start the process of letting the *edav.info/* people know that we would like them to include our changes (in git-speak, we are *requesting* that the *edav.info/* people do a `git merge` to update their files with our proposed changes.)
+6. Now GitHub is once again helping out by letting us review the changes we made. On this page we can **review our proposed changes** by scrolling down and looking at the [diffs](https://git-scm.com/docs/git-diff){target="_blank"}. Our fix is very simple so there isn't much to see. Once again, we are going to **push the big green button**, this time labeled **Create pull request**. This will start the process of letting the *edav.info/* people know that we would like them to include our changes (in git-speak, we are *requesting* that the *edav.info/* people do a `git merge` to update their files with our proposed changes.) Note that the proposed changes are in a branch called **patch-1** on our repo; we are asking to merge them into the **master** branch on their repo.
 ![](images/excited_student/directly-06.png)
 *Chance to review your changes. Once satisfied, hit the big green button to start a pull request.*
 
