@@ -38,7 +38,7 @@ tq_get("GOOGL", get="stock.prices")
 ```
 
 ```
-## # A tibble: 2,574 x 7
+## # A tibble: 2,575 x 7
 ##    date        open  high   low close   volume adjusted
 ##    <date>     <dbl> <dbl> <dbl> <dbl>    <dbl>    <dbl>
 ##  1 2009-01-02  154.  161.  153.  161.  7213700     161.
@@ -51,7 +51,7 @@ tq_get("GOOGL", get="stock.prices")
 ##  8 2009-01-13  156.  160.  155.  157.  8856100     157.
 ##  9 2009-01-14  155.  157.  149.  151. 10924800     151.
 ## 10 2009-01-15  149.  152.  144.  150. 11857100     150.
-## # … with 2,564 more rows
+## # … with 2,565 more rows
 ```
 
 Calculate monthly return of single stock:
@@ -117,7 +117,7 @@ tq_get(c("GOOGL","AMZN","FB","AAPL"), get="stock.prices")
 ```
 
 ```
-## # A tibble: 9,445 x 8
+## # A tibble: 9,449 x 8
 ##    symbol date        open  high   low close   volume adjusted
 ##    <chr>  <date>     <dbl> <dbl> <dbl> <dbl>    <dbl>    <dbl>
 ##  1 GOOGL  2009-01-02  154.  161.  153.  161.  7213700     161.
@@ -130,7 +130,7 @@ tq_get(c("GOOGL","AMZN","FB","AAPL"), get="stock.prices")
 ##  8 GOOGL  2009-01-13  156.  160.  155.  157.  8856100     157.
 ##  9 GOOGL  2009-01-14  155.  157.  149.  151. 10924800     151.
 ## 10 GOOGL  2009-01-15  149.  152.  144.  150. 11857100     150.
-## # … with 9,435 more rows
+## # … with 9,439 more rows
 ```
 
 Create a multiple line chart of the closing prices of multiple stocks (again, GAFA). We can show each stock in a different color on the same graph:

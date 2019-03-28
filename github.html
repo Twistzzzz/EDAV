@@ -25,7 +25,7 @@
 <meta name="author" content="Zach Bogart, Joyce Robbins">
 
 
-<meta name="date" content="2019-03-27">
+<meta name="date" content="2019-03-28">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -256,11 +256,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4" data-path="contribute.html"><a href="contribute.html"><i class="fa fa-check"></i><b>4</b> Contribute to this Resource</a><ul>
 <li class="chapter" data-level="4.1" data-path="contribute.html"><a href="contribute.html#overview-2"><i class="fa fa-check"></i><b>4.1</b> Overview</a></li>
 <li class="chapter" data-level="4.2" data-path="contribute.html"><a href="contribute.html#why-contribute"><i class="fa fa-check"></i><b>4.2</b> Why contribute?</a></li>
-<li class="chapter" data-level="4.3" data-path="contribute.html"><a href="contribute.html#ways-you-can-contribute"><i class="fa fa-check"></i><b>4.3</b> Ways you can contribute</a><ul>
-<li class="chapter" data-level="4.3.1" data-path="contribute.html"><a href="contribute.html#submit-an-issue"><i class="fa fa-check"></i><b>4.3.1</b> Submit an issue</a></li>
-<li class="chapter" data-level="4.3.2" data-path="contribute.html"><a href="contribute.html#github-only-contribution"><i class="fa fa-check"></i><b>4.3.2</b> GitHub only contribution</a></li>
-</ul></li>
-<li class="chapter" data-level="4.4" data-path="contribute.html"><a href="contribute.html#resources-1"><i class="fa fa-check"></i><b>4.4</b> Resources</a></li>
+<li class="chapter" data-level="4.3" data-path="contribute.html"><a href="contribute.html#ways-you-can-contribute"><i class="fa fa-check"></i><b>4.3</b> Ways you can contribute</a></li>
+<li class="chapter" data-level="4.4" data-path="contribute.html"><a href="contribute.html#submit-an-issue"><i class="fa fa-check"></i><b>4.4</b> Submit an issue</a></li>
+<li class="chapter" data-level="4.5" data-path="contribute.html"><a href="contribute.html#github-only-walkthrough"><i class="fa fa-check"></i><b>4.5</b> GitHub only walkthrough</a></li>
+<li class="chapter" data-level="4.6" data-path="contribute.html"><a href="contribute.html#resources-1"><i class="fa fa-check"></i><b>4.6</b> Resources</a></li>
 </ul></li>
 <li class="part"><span><b>II Continuous Variables</b></span></li>
 <li class="chapter" data-level="5" data-path="histo.html"><a href="histo.html"><i class="fa fa-check"></i><b>5</b> Chart: Histogram</a><ul>
@@ -606,9 +605,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="29" data-path="github.html"><a href="github.html"><i class="fa fa-check"></i><b>29</b> GitHub/Git Resources</a><ul>
 <li class="chapter" data-level="29.1" data-path="github.html"><a href="github.html#overview-23"><i class="fa fa-check"></i><b>29.1</b> Overview</a></li>
-<li class="chapter" data-level="29.2" data-path="github.html"><a href="github.html#introduction-3"><i class="fa fa-check"></i><b>29.2</b> Introduction</a></li>
-<li class="chapter" data-level="29.3" data-path="github.html"><a href="github.html#on-github"><i class="fa fa-check"></i><b>29.3</b> On GitHub</a></li>
-<li class="chapter" data-level="29.4" data-path="github.html"><a href="github.html#on-git"><i class="fa fa-check"></i><b>29.4</b> On Git</a><ul>
+<li class="chapter" data-level="29.2" data-path="github.html"><a href="github.html#first-things-first"><i class="fa fa-check"></i><b>29.2</b> First things first</a></li>
+<li class="chapter" data-level="29.3" data-path="github.html"><a href="github.html#the-no-branch-workflow-a.k.a-master-to-master"><i class="fa fa-check"></i><b>29.3</b> The no branch workflow, a.k.a master-to-master</a></li>
+<li class="chapter" data-level="29.4" data-path="github.html"><a href="github.html#branching"><i class="fa fa-check"></i><b>29.4</b> Branching</a><ul>
 <li class="chapter" data-level="" data-path="github.html"><a href="github.html#step-1-fork-the-upstream-repo-once"><i class="fa fa-check"></i>Step 1: Fork the upstream repo (once)</a></li>
 <li class="chapter" data-level="" data-path="github.html"><a href="github.html#step-2-clone-origin-and-create-a-local-repository-once"><i class="fa fa-check"></i>Step 2: Clone origin and create a local repository (once)</a></li>
 <li class="chapter" data-level="" data-path="github.html"><a href="github.html#step-3-configure-remote-that-points-to-the-upstream-repository-once"><i class="fa fa-check"></i>Step 3: Configure remote that points to the upstream repository (once)</a></li>
@@ -706,31 +705,35 @@ function unhover(element) {
 <p><img src="images/banners/banner_github.png" /></p>
 <div id="overview-23" class="section level2">
 <h2><span class="header-section-number">29.1</span> Overview</h2>
-<p>This section includes links for working with GitHub/Git and advice on how to collaborate in teams on large coding projects.</p>
+<p>This section describes workflows for working with GitHub/Git and advice on how to collaborate in teams on large coding projects. If you’re interested in learning how to propose changes to <a href="edav.info" class="uri">edav.info</a> (or any other repo) without leaving github.com, see our <a href="contributing.html">Contributing</a> chapter.</p>
+<p>Ok, not satisfied with fixing typos on GitHub? Ready to work locally and move code back and forth between your repositories (or someone else’s) and your machine? For that you’ll need Git, a widely used version control system. It is super useful and powerful, but people also find it quite annoying and <a href="https://xkcd.com/1597/" target="_blank">difficult to understand</a>. Rather than trying to master the whole system, we suggest beginning with some basic workflows, as outlined below. You can derive great benefits from it without being an expert (trust me, I know!)</p>
 </div>
-<div id="introduction-3" class="section level2">
-<h2><span class="header-section-number">29.2</span> Introduction</h2>
-<p>I don’t wanna just <em>read</em> about GitHub/Git; I wanna learn by <em>doing</em>!</p>
-<p>We love your enthusiasm. To hit the ground running, checkout <a href="https://lab.github.com/" target="_blank">GitHub Learning Lab</a>. This application will teach you how to use GitHub with hands-on courses using actual repos. Its the perfect way to understand what using GitHub looks like.</p>
-<p>In this course, you will be working on a <a href="project.html">project</a> in teams. Because of this, you probably want to be able to share code and work on different parts of the project simultaneously. This is where Git and GitHub comes in.</p>
-<p><a href="https://github.com/" target="_blank">GitHub</a> is a way to work on projects and keep track of their status easily and efficiently. It is built off of <a href="https://git-scm.com/" target="_blank">Git</a>, a type of <a href="https://en.wikipedia.org/wiki/Version_control" target="_blank">version control</a> software. It is super useful and powerful, but people also find it quite annoying and <a href="https://xkcd.com/1597/" target="_blank">difficult to understand</a>. So, in an effort to help you, we have collected some resources to learn about GitHub and how you can use it to work on projects.</p>
+<div id="first-things-first" class="section level2">
+<h2><span class="header-section-number">29.2</span> First things first</h2>
+<ol style="list-style-type: decimal">
+<li><p><em>Install Git</em> To do so, follow the instructions in the <a href="https://happygitwithr.com/install-git.html" target="_blank">Install Git</a> chapter of <em>Happy Git with R</em>.</p></li>
+<li><p><em>Tell Git your name and email address.</em> <a href="https://happygitwithr.com/hello-git.html" target="_blank">Introduce yourself to Git</a> in <em>Happy Git</em> explains it all.</p></li>
+<li><p>(Optional) <em>Make sure that you can pull from and push to GitHub from your computer</em> <a href="https://happygitwithr.com/push-pull-github.html" target="_blank">Connect to GitHub</a></p></li>
+</ol>
 </div>
-<div id="on-github" class="section level2">
-<h2><span class="header-section-number">29.3</span> On GitHub</h2>
-<p>What’s GitHub? Start here.</p>
-<ul>
-<li><a href="https://guides.github.com/activities/hello-world/" target="_blank">Hello World</a>: GitHub’s take on the “Hello World” program. Great starting point to learn how GitHub works.</li>
-<li><a href="https://www.youtube.com/githubguides" target="_blank">Github Training &amp; Guides</a>: This YouTube Channel has a lot of info about what GitHub can do. The first line of the opening video is, “Okay. You signed up for GitHub. What do you do now?”. If you are asking that very question, this channel will serve you well.</li>
-</ul>
+<div id="the-no-branch-workflow-a.k.a-master-to-master" class="section level2">
+<h2><span class="header-section-number">29.3</span> The no branch workflow, a.k.a master-to-master</h2>
+<p>To get comfortable with Git, start with this basic workflow in which you will be pulling from and pushing to <em>your</em> repo on GitHub. Just you, no collaboration:</p>
+<p><img src="/images/git/no-branch.png" /></p>
+<p>The <a href="https://happygitwithr.com/rstudio-git-github.html" target="_blank">Connect RStudio to Git and GitHub</a> chapter of <em>Happy Git</em> will get you set up: you will create a repo on GitHub, clone the repo into an RStudio project, and practice making changes.</p>
+<p>Once you’re set up, your local workflow will be <strong>pull, work, commit/push</strong>.</p>
+<p><strong>PULL</strong> Each time you open RStudio and switch to the project, you will pull down any changes made to the repo on GitHub by clicking the <strong>Down Arrow</strong> in the Git pane of RStudio. You may think that no changes have been made to GitHub and there’s nothing to pull, but you may forget the typos that you fixed online, so it’s good practice to always start by pulling changes just in case.</p>
+<p><strong>WORK</strong> Do your stuff. Make changes to files. Add new files. Keep an eye on the Git panel in RStudio; it will show you which files were changes.</p>
+<p><strong>COMMIT/PUSH</strong> When you’re done working, you’ll want to think about what to do with the files that have changed. I like to keep the Git panel clear, so when I’m done I do one of three things with each file: 1) click “Staged” to get it ready for a sendoff to GitHub, 2) delete it if it’s not needed, 3) add it to <code>.gitignore</code> if it’s a file I want to keep locally but not send to GitHub. (Keep in mind that files in .gitignore are not backed up unless you have another backup system.) If I have a file that belongs somewhere else, I will move it there, so the only files left are the ones to send to GitHub.</p>
+<p>The next step is to click the <strong>Commit</strong> button and enter a commit message that meaningful describes what was done. Finally clicking the <strong>Up Arrow</strong> will send the commit to GitHub.</p>
+<p>It’s not considered good practice to commit too often, but as a beginner, it’s useful to do so to learn how it all works.</p>
 </div>
-<div id="on-git" class="section level2">
-<h2><span class="header-section-number">29.4</span> On Git</h2>
-<p>What’s Git? Git is a widely used version control system, which is especially useful in collaborative projects. Why use Git? For small changes such as typos, we can directly fix it on Github. However, when you want to modify code and more complicated stuff, using Git becomes necessary.</p>
-<p>Before we go deeper into the matter, take a look at the <a href="https://guides.github.com/introduction/git-handbook/" target="_blank">Git Hankbook</a> to get started.</p>
-<p>You also need to do some setup work. First <a href="https://happygitwithr.com/install-git.html" target="_blank">install Git</a> and then <a href="https://happygitwithr.com/hello-git.html" target="_blank">connect Git to your Github account</a>. There is an option to <a href="https://happygitwithr.com/rstudio-git-github.html">connect RStudio to Git and Github</a>. Once connected, we can issue Git commands in the <strong>Terminal</strong> section of RStudio. There shall also be a <strong>Git</strong> tab in RStudio as well.</p>
-<p>Now let’s walk you through a detailed workflow on contributing other’s work. In this example, we will use Git with RStudio for illustration purpose.</p>
+<div id="branching" class="section level2">
+<h2><span class="header-section-number">29.4</span> Branching</h2>
+<p>Once you’ve comfortable with the workflow described above, you’re ready to start branching. The process is quite similar whether you’re working on your own repo or someone else’s. If it’s <em>your</em> repo, you can skip Steps 1 and 3.</p>
 <div id="step-1-fork-the-upstream-repo-once" class="section level3 unnumbered">
 <h3>Step 1: Fork the upstream repo (once)</h3>
+<p><em>Skip this step if you’re syncing with your own repo.</em></p>
 <p>Let’s say you want to contribute to EDAV! Fork <a href="https://github.com/jtr13/EDAV" target="_blank">our GitHub repo</a> and then on your own Github page, you will see a forked <strong>EDAV</strong> repo under the repositories section. Note, from now on, the term <strong>upstream repository</strong> refers to the original repo of the project that you forked and the term <strong>origin repository</strong> refers to the repo that you created or forked on Github. From your respective, both <strong>upstream</strong> and <strong>origin</strong> are remote repositories.
 <img src="images/Git_step1.PNG" /></p>
 </div>
@@ -742,14 +745,14 @@ function unhover(element) {
 </div>
 <div id="step-3-configure-remote-that-points-to-the-upstream-repository-once" class="section level3 unnumbered">
 <h3>Step 3: Configure remote that points to the upstream repository (once)</h3>
+<p><em>Skip this step if you’re syncing with your own repo.</em></p>
 <p>The purpose of this step is to specify the location of the upstream repository. It may not make sense to you at this moment, but soon it will become clear.</p>
-<p>To complete this step, type in the following command line:
-<strong>git remote add upstream <upstream repo url></strong>
-<img src="images/Git_step3.PNG" /></p>
+<p>To complete this step, type in the following command line:</p>
+<p><code>&gt; git remote add upstream &lt;upstream repo url&gt;</code></p>
 </div>
 <div id="step-4-pull" class="section level3 unnumbered">
 <h3>Step 4: Pull</h3>
-<p>Under the Git tab in RStudio, you can see a pull button, which is represented by a downward pointing arrow. Clicking that button is equivalent to running a git pull command. The purpose of a pull command is to fetch and download content from a remote repository, and in this case we want to pull from the <strong>origin master</strong> and make sure <strong>local master</strong> is updated to match the content.</p>
+<p>Under the Git tab in RStudio, you can see a pull button, which is represented by a downward pointing arrow. Clicking that button is equivalent to running a git pull command. The purpose of a pull command is to fetch and download content from a remote repository, and in this case we want to pull from the <code>origin/master</code> and make sure <code>local/master</code> is updated to match the content.</p>
 <p>Now we can create a new branch and work on new features that we want to add into the <strong>EDAV</strong> project. Notice that steps 1, 2 and 3 only need to be done once when you start working on a new project. However, whenever you want to create a new branch, <strong>pull command</strong> is <strong>always</strong> the first step as you want to keep your local repository up to date.</p>
 <p>Now you might have a question: what is a branch? Branching is the way to work on different parts of a repository at one time. It creates a snapshot of the original branch. Eventually, after you have finalized your work, you will merge your work into the upstream repository.</p>
 <p>To create a branch,</p>
@@ -767,16 +770,18 @@ function unhover(element) {
 </div>
 <div id="step-6-submit-a-pull-request" class="section level3 unnumbered">
 <h3>Step 6: Submit a pull request</h3>
-<p>Now you are able to see the branch you have created on the Github page. The next step is to submit a pull request and the process is exactly the same as in [Direct contribution walkthrough].</p>
+<p>Now you are able to see the branch you have created on the Github page. The next step is to submit a pull request and the process is very similar to the process described in the <a href="contribute.html/github-only-walkthrough">GitHub only walkthrough</a>.</p>
 </div>
 <div id="last-step-sync-local-master-with-upstream-master" class="section level3 unnumbered">
 <h3>Last Step: Sync local master with upstream master</h3>
-<p>Once the merge is accepted, you want to delete this branch since the upstream already contains all the changes you have made. To delete the branch on origin, you can simply use Github. To delete the branch locally, you need to type <strong>git branch -d branchname</strong>.</p>
-<p>We also need to stop tracking the remote branch using the following Git command: <strong>git fetch -p</strong>.</p>
+<p>Once the merge is accepted, you want to delete this branch since the upstream already contains all the changes you have made. To delete the branch on origin, you can simply use GitHub. To delete the branch locally, type the following in the terminal:</p>
+<p><code>&gt; git branch -d branchname</code></p>
+<p>We also need to stop tracking the remote branch using the following Git command:</p>
+<p><code>&gt; git fetch -p</code>.</p>
 <p>Finally, let’s sync local master with upstream master by running these commands:</p>
-<p><strong>git fetch upstream</strong></p>
-<p><strong>git checkout master</strong></p>
-<p><strong>git merge upstream/master</strong></p>
+<p><code>&gt; git fetch upstream</code></p>
+<p><code>&gt; git checkout master</code></p>
+<p><code>&gt; git merge upstream/master</code></p>
 <p>For more detailed description on each step in the Git workflow, please refer to workflow 4 in the Git slides <a href="https://github.com/jtr13/codehelp/blob/master/GitHubWorkflowPt2.pdf" target="_blank">Git/Github Workflow</a>.</p>
 </div>
 </div>
@@ -806,9 +811,10 @@ function unhover(element) {
 </div>
 <div id="more-resources-1" class="section level3 unnumbered">
 <h3>More Resources</h3>
+<p>To hit the ground running, checkout <a href="https://lab.github.com/" target="_blank">GitHub Learning Lab</a>. This application will teach you how to use GitHub with hands-on courses using actual repos. Its the perfect way to understand what using GitHub looks like.</p>
 <p>For the <a href="https://getyarn.io/yarn-clip/64bbb001-ed8a-450a-8826-b939f653b969" target="_blank">nerds in the room</a>…</p>
 <ul>
-<li><a href="https://www.youtube.com/watch?v=3m7BgIvC-uQ" target="_blank">Git For Ages 4 And Up</a>: There’s a lot going on under the hood. This talk will help explain how it all works…with kids toys!</li>
+<li><p><a href="https://www.youtube.com/watch?v=3m7BgIvC-uQ" target="_blank">Git For Ages 4 And Up</a>: There’s a lot going on under the hood. This talk will help explain how it all works…with kids toys!</p></li>
 <li><a href="https://stackoverflow.com/questions/1057564/pretty-git-branch-graphs" target="_blank">Make pretty git logs</a>: Always remember <a href="https://i.stack.imgur.com/ElVkf.jpg" target="_blank">(A DOG)</a>. Also, this alias command is nice to have around:
 <ul>
 <li><code>git config --global alias.adog &quot;log --all --decorate --oneline --graph&quot;</code></li>
@@ -820,7 +826,7 @@ function unhover(element) {
 <li><a href="https://github.com/jimeh/git-aware-prompt" target="_blank">Git Aware Prompt</a>: An excellent add-on to the Terminal that informs you which branch you have checked out. Someone also made <a href="https://github.com/udondan/git-aware-prompt" target="_blank">an even spiffier version</a> where it will inform you of your git status using helpful emojis.</li>
 <li><a href="https://popgen.nescent.org/CONTRIBUTING_WITH_GIT2R.html" target="_blank">Contributing with git2r</a>, on the <a href="https://popgen.nescent.org/index.html" target="_blank">Population Genetics in R</a> provides helpful information on using git commands within R through the git2r package. In particular it explains how to create a GITHUB_PAT and then set the <code>credential</code> parameter in certain functions to find the PAT. (Note though that the site was created in 2015 and as of February 2019 has not been updated.)</li>
 <li><strong>Want a little reading as well?</strong>: <a href="https://try.github.io/" target="_blank">Resources to learn Git</a> is a simple site split into two main sections: <em>Learn by reading</em> and <em>Learn by doing</em>. Take your pick. <i class= "far fa-smile"></i></li>
-<li><a href="https://tonyelhabr.rbind.io/post/making-first-pull-request/" target="_blank">A Newbie’s Guide to Making A Pull Request (for an R package)</a>, Tony Elhabr’s experience submitting a pull request to an R package at tidyverse developer day (part of <a href="https://www.rstudio.com/conference/" target="_blank">rstudio::conf 2019</a>.</li>
+<li><p><a href="https://tonyelhabr.rbind.io/post/making-first-pull-request/" target="_blank">A Newbie’s Guide to Making A Pull Request (for an R package)</a>, Tony Elhabr’s experience submitting a pull request to an R package at tidyverse developer day (part of <a href="https://www.rstudio.com/conference/" target="_blank">rstudio::conf 2019</a>.</p></li>
 </ul>
 
 </div>

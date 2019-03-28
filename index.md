@@ -1,7 +1,7 @@
 --- 
 title: "edav.info/"
 author: "Zach Bogart, Joyce Robbins"
-date: "2019-03-27"
+date: "2019-03-28"
 site: bookdown::bookdown_site
 documentclass: book
 #bibliography: [book.bib]
